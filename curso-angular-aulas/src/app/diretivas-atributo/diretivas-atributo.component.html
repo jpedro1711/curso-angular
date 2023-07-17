@@ -1,0 +1,30 @@
+<!-- <ng-content select="h1"></ng-content>
+
+<div *ngIf="nome == 'João'">
+  <p [ngClass]="{ active: valor, disabled: !valor }">NgClass</p>
+  <p [ngStyle]="{ height: altura, 'background-color': backgroundColor }">
+    NgStyle
+  </p>
+</div>
+<hr />
+<input type="text" [(ngModel)]="nome" />
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{ item.nome }}</li>
+
+<hr />
+
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>{{ item.nome }}</p>
+</ng-template>
+
+<hr />
+
+<ng-content select="hr"></ng-content> -->
+
+<hr />
+
+<input type="text" [(ngModel)]="nome" />
+<button (click)="salvar()">Salvar</button>
+<li *ngFor="let item of list">{{ item.nome | uppercase }}</li>
+{{ date | date : "dd/MM/yyyy" }}

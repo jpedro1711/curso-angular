@@ -1,0 +1,33 @@
+<p>data-binding works!</p>
+<p>{{ nome }} tem {{ idade }} anos</p>
+<p>João tem mais que 17 anos</p>
+<p>{{ idade > 17 }}</p>
+
+<p>Quanto é 18 - 1?</p>
+{{ idade - 1 }}
+
+<hr />
+
+<h2>Propery Binding</h2>
+<button [disabled]="checkDisabled">Botão</button>
+<img [src]="imgSrc" [title]="imgTitle" />
+
+<hr />
+
+<h2>Event binding</h2>
+
+<button (click)="alertaInfo($event)">Evento</button>
+
+<div
+  (mousemove)="mouseMoveTest($event)"
+  style="background: red; width: 300px; height: 300px"
+></div>
+
+{{ position.x }} - {{ position.y }}
+
+<hr />
+
+<h2>Two-way-binding</h2>
+
+<input type="text" [(ngModel)]="nome" />
+{{ nome }}

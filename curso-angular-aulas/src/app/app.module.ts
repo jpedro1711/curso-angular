@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DiretivaAngularComponent } from './diretiva-angular/diretiva-angular.component';
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent, DataBindingComponent],
+  declarations: [AppComponent, TitleComponent, DataBindingComponent, DiretivaAngularComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
